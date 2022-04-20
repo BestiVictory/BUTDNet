@@ -1,10 +1,8 @@
 # BUTDNet
 For image review techniques, the quality of the generated results depends on the quality of the dataset. But not all domains have high-quality datasets available. In this case, our pipeline can be used to build a data set by itself when there is a lack of high-quality data sets, and generate natural language results that meet a certain quality.
-The following describes the filtering process of our self-built dataset as follows:
-(1) Obtain a large enough data set with a large number of short sentences.  
-
-(2) Use some techniques of natural language processing to clean and organize the data.
-
+The following describes the filtering process of our self-built dataset as follows:  
+(1) Obtain a large enough data set with a large number of short sentences.    
+(2) Use some techniques of natural language processing to clean and organize the data.  
 (3) Determine a topic, such as photography, people, flowers, etc., and manually select a small number of sentences that match the selected topic for classification.
 (4) Use these sentences to select the bag-of-words model as the word vector matrix of the corresponding corpus.
 (5) Use this vector matrix to train a WMD model.
